@@ -1,5 +1,5 @@
 ### VdockPlugin
-This is a vdockPlugin for cloud9 ide. This plugin is meant for [vdock-hugo](https://github.com/rchari66/vdock-hugo) tool.
+This is a vdockPlugin for cloud9 ide. This plugin is for [vdock-hugo](https://github.com/rchari66/vdock-hugo) tool.
 
 ### Adding custom snippets to vdock-hugo
 #### Step 1:
