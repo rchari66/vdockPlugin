@@ -1,0 +1,59 @@
+# scope: markdown
+
+snippet vlist
+	* ${1:List Item 1}
+	* ${2:List Item 2}
+
+snippet vunorderedList
+	* ${1:List Item 1}
+	* ${2:List Item 2}
+		* ${3:sub list item 1}
+		* ${4:sub list item 2}
+
+snippet vorderedList
+	1. ${1: Item 1}
+	2. ${2: Item 2}
+		1. ${3: Item 1}
+		2. ${4: Item 2}
+
+## Table snippets
+snippet vtabdata
+	   ${1:data}        | 
+
+snippet vtabheaderseperate
+	--------------- |
+
+
+snippet v1col1table
+	  ${1:Column 1}   |
+	 ---------------- |
+	
+
+snippet v2coltable
+	  ${1:Column 1}  |  ${2:Column 2}  |
+	  -------------- |---------------- |
+	
+
+snippet v3coltable
+	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  |
+	  -------------- |---------------- |---------------- |
+	
+
+snippet v4coltable
+	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  |
+	  -------------- |---------------- |---------------- |---------------- |
+	
+
+snippet v5coltable
+	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  | ${5:Column 5}  |
+	  -------------- |---------------- |---------------- |---------------- |---------------- |
+	
+
+snippet v6coltable
+	| ${1:Column 1}   |  ${2:Column 2}  |  ${3:Column 3}  |  ${4:Column 4}  |  ${5:Column 5}  |  ${6:Column 6 } |
+	|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |
+	
+# task list
+snippet vtasklist
+	- [${1:x}] ${2:item}
+	

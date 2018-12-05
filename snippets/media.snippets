@@ -1,0 +1,37 @@
+# scope: markdown
+
+snippet vlink
+	[${1:Name}](${2:url})
+
+snippet vimage
+	![${1:Alt Text}](${2:url})
+	
+snippet vyoutubeSmall
+	<iframe width="480" height="280"
+		src="${1:https://www.youtube.com/embed/tgbNymZ7vqY}">
+	</iframe>
+	
+
+snippet vyoutubeMedium
+	<iframe width="720" height="405"
+		src="${1:https://www.youtube.com/embed/tgbNymZ7vqY}">
+	</iframe>
+	
+
+snippet vyoutubeLarge
+	<iframe width="1056" height="594"
+		src="${1:https://www.youtube.com/embed/tgbNymZ7vqY}">
+	</iframe>
+	
+
+snippet vreflink
+	[${1:Ref Name}] [${2:Ref Number}]
+
+snippet vreflinkSample
+	[rchari/vdock-tool] [1] is a docker based tool with integreated IDE.
+	It's useful for checkout the [code] [2] ,edit in ide, testing(preview) & deployment of [hugo] [3] sites.
+	
+	[1]: https://github.com/rchari66/vdock-hugo/blob/master/README.md "Vdock-tool"
+	[2]: https://gohugo.io/ "hugo site"
+	[3]: https://techtaste.me "Check out hugo blog sample"
+
