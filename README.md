@@ -7,7 +7,7 @@ This is a vdockPlugin contains markdown snippets for cloud9 ide. This plugin com
 From `Cloud9` menu(top-left corner); select menu-option `Open Your Init Script` to open `init.js`. Now add below content to `init.js`
 ```
 services.pluginManager.loadPackage([
-    "https://techtaste.me/vdock-plugin/c9build/package.vdockPlugin.js",
+    "https://techtaste.me/vdockPlugin/c9build/package.vdockPlugin.js",
 ]);
 ```
 #### Step 2:
