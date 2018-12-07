@@ -1,12 +1,13 @@
 ### VdockPlugin
-This is a vdockPlugin for cloud9 ide. This plugin is for [vdock-hugo](https://github.com/rchari66/vdock-hugo) tool.
+This is a vdockPlugin for cloud9 ide. This plugin comes with for [vdock](https://github.com/rchari66/vdock) tool.
 
-### Adding custom snippets to vdock-hugo
+
+### To add it your cloud9 ide
 #### Step 1:
 From `Cloud9` menu(top-left corner); select menu-option `Open Your Init Script` to open `init.js`. Now add below content to `init.js`
 ```
 services.pluginManager.loadPackage([
-    "~/.c9/plugins/vdockPlugin/package.json",
+    "https://techtaste.me/vdock-plugin/c9build/package.vdockPlugin.js",
 ]);
 ```
 #### Step 2:
