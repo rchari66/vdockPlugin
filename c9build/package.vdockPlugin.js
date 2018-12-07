@@ -35,7 +35,7 @@ define("plugins/vdockPlugin/__static__",[], function(require, exports, module) {
                 {
                     "type": "snippets",
                     "filename": "highlights.snippets",
-                    "data": "# scope: markdown\n\nsnippet vbold\n\t**${1:BOLD}**\n\nsnippet vitalic\n\t_${1:Italic}_\n\n\nsnippet vblockquote\n\t> ${1:qouted text}\n\nsnippet vunderline\n\t__${1:UnderlineText}__\n\nsnippet vstriketext\n\t~~${1:STRIKE TEXT}~~\n"
+                    "data": "# scope: markdown\n\nsnippet vbold\n\t**${1:BOLD}**\n\nsnippet vitalic\n\t_${1:Italic}_\n\n\nsnippet vblockquote\n\t> ${1:qouted text}\n\nsnippet vunderline\n\t__${1:UnderlineText}__\n\nsnippet vstriketext\n\t~~${1:STRIKE TEXT}~~\n\nsnippet\tvbreak\n\t---\n\t<br>\n\t\n"
                 },
                 {
                     "type": "snippets",
