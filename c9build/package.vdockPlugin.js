@@ -30,7 +30,7 @@ define("plugins/vdockPlugin/__static__",[], function(require, exports, module) {
                 {
                     "type": "snippets",
                     "filename": "headings.snippets",
-                    "data": "# scope: markdown\n\nsnippet vheading1\n\t# ${1:Heading1}\n\nsnippet vheading2\n\t## ${1:Heading2}\n\nsnippet vh1\n\t# ${1:Heading1}\n\nsnippet vh2\n\t## ${1:Heading2}\n\nsnippet vh3\n\t### ${1:Heading3}\n\nsnippet vh4\n\t#### ${1:Heading4}\n\nsnippet vh5\n\t##### ${1:Heading5}\n\nsnippet vh6\n\t###### ${1:Heading6}\n"
+                    "data": "# scope: markdown\n\nsnippet vheading1\n\t# ${1:Heading1}\n\nsnippet vheading2\n\t## ${1:Heading2}\n\nsnippet vh1\n\t# ${1:Heading1}\n\nsnippet vh2\n\t## ${1:Heading2}\n\nsnippet vh3\n\t### ${1:Heading3}\n\nsnippet vh4\n\t#### ${1:Heading4}\n\nsnippet vh5\n\t##### ${1:Heading5}\n\nsnippet vh6\n\t###### ${1:Heading6}\n\nsnippet vcheck\n\t\\<br"
                 },
                 {
                     "type": "snippets",
