@@ -30,12 +30,12 @@ define("plugins/vdockPlugin/__static__",[], function(require, exports, module) {
                 {
                     "type": "snippets",
                     "filename": "headings.snippets",
-                    "data": "# scope: markdown\n\nsnippet vheading1\n\t# ${1:Heading1}\n\nsnippet vheading2\n\t## ${1:Heading2}\n\nsnippet vh1\n\t# ${1:Heading1}\n\nsnippet vh2\n\t## ${1:Heading2}\n\nsnippet vh3\n\t### ${1:Heading3}\n\nsnippet vh4\n\t#### ${1:Heading4}\n\nsnippet vh5\n\t##### ${1:Heading5}\n\nsnippet vh6\n\t###### ${1:Heading6}\n\nsnippet vcheck\n\t\\<br"
+                    "data": "# scope: markdown\n\nsnippet vheading1\n\t# ${1:Heading1}\n\nsnippet vheading2\n\t## ${1:Heading2}\n\nsnippet vh1\n\t# ${1:Heading1}\n\nsnippet vh2\n\t## ${1:Heading2}\n\nsnippet vh3\n\t### ${1:Heading3}\n\nsnippet vh4\n\t#### ${1:Heading4}\n\nsnippet vh5\n\t##### ${1:Heading5}\n\nsnippet vh6\n\t###### ${1:Heading6}\n\nsnippet vcheck\n\thelloworld"
                 },
                 {
                     "type": "snippets",
                     "filename": "highlights.snippets",
-                    "data": "# scope: markdown\n\nsnippet vbold\n\t**${1:BOLD}**\n\nsnippet vitalic\n\t_${1:Italic}_\n\n\nsnippet vblockquote\n\t> ${1:qouted text}\n\nsnippet vunderline\n\t__${1:UnderlineText}__\n\nsnippet vstriketext\n\t~~${1:STRIKE TEXT}~~\n\t\nsnippet vtesting\n\thelloworld\n\t\n"
+                    "data": "# scope: markdown\n\nsnippet vbold\n\t**${1:BOLD}**\n\nsnippet vitalic\n\t_${1:Italic}_\n\n\nsnippet vblockquote\n\t> ${1:qouted text}\n\nsnippet vunderline\n\t__${1:UnderlineText}__\n\nsnippet vstriketext\n\t~~${1:STRIKE TEXT}~~\n\t\n"
                 },
                 {
                     "type": "snippets",
