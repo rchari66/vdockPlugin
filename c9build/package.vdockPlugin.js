@@ -3,17 +3,17 @@ define("plugins/vdockPlugin/package.vdockPlugin", [], {
     "c9": {
         "plugins": [
             {
-                "packagePath": "plugins/vdockPlugin/__static__"
+                "packagePath": "plugins/vdockPlugin/vdockPlugin.bundle"
             }
         ]
     }
 });
 
-define("plugins/vdockPlugin/__static__",[], function(require, exports, module) {
+define("plugins/vdockPlugin/vdockPlugin.bundle",[], function(require, exports, module) {
     main.consumes = [
         "Plugin", "plugin.debug"
     ];
-    main.provides = [];
+    main.provides = ["vdockPlugin.bundle"];
     return main;
     function main(options, imports, register) {
         var debug = imports["plugin.debug"];
@@ -45,7 +45,12 @@ define("plugins/vdockPlugin/__static__",[], function(require, exports, module) {
                 {
                     "type": "snippets",
                     "filename": "list.snippets",
-                    "data": "# scope: markdown\n\nsnippet vlist\n\t* ${1:List Item 1}\n\t* ${2:List Item 2}\n\nsnippet vunorderedList\n\t* ${1:List Item 1}\n\t* ${2:List Item 2}\n\t\t* ${3:sub list item 1}\n\t\t* ${4:sub list item 2}\n\nsnippet vorderedList\n\t1. ${1: Item 1}\n\t2. ${2: Item 2}\n\t\t1. ${3: Item 1}\n\t\t2. ${4: Item 2}\n\n## Table snippets\nsnippet vtabdata\n\t   ${1:data}        | \n\nsnippet vtabheaderseperate\n\t--------------- |\n\n\nsnippet v1col1table\n\t  ${1:Column 1}   |\n\t ---------------- |\n\t\n\nsnippet v2coltable\n\t  ${1:Column 1}  |  ${2:Column 2}  |\n\t  -------------- |---------------- |\n\t\n\nsnippet v3coltable\n\t  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  |\n\t  -------------- |---------------- |---------------- |\n\t\n\nsnippet v4coltable\n\t  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  |\n\t  -------------- |---------------- |---------------- |---------------- |\n\t\n\nsnippet v5coltable\n\t  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  | ${5:Column 5}  |\n\t  -------------- |---------------- |---------------- |---------------- |---------------- |\n\t\n\nsnippet v6coltable\n\t| ${1:Column 1}   |  ${2:Column 2}  |  ${3:Column 3}  |  ${4:Column 4}  |  ${5:Column 5}  |  ${6:Column 6 } |\n\t|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |\n\t\n\n\nsnippet v1rowtable\n\t${1:table data}   |\n\t\n\nsnippet v2rowtable\n\t${1:table data}  |  ${2:table data}  |\n\t\n\nsnippet v3rowtable\n\t${1:table data}  |  ${2:table data}  | ${3:table data}  |\n\t\n\nsnippet v4rowtable\n\t${1:table data}  |  ${2:table data}  | ${3:table data}  | ${4:table data}  |\n\t\n\nsnippet v5rowtable\n\t${1:table data}  |  ${2:table data}  | ${3:table data}  | ${4:table data}  | ${5:table data}  |\n\t\n\nsnippet v6rowtable\n\t${1:table data}   |  ${2:table data}  |  ${3:table data}  |  ${4:table data}  |  ${5:table data}  |  ${6:table data } \n\t\t\n\n# task list\nsnippet vtasklist\n\t- [${1:x}] ${2:item}\n\t\n\n\t"
+                    "data": "# scope: markdown\n\nsnippet vlist\n\t* ${1:List Item 1}\n\t* ${2:List Item 2}\n\nsnippet vunorderedList\n\t* ${1:List Item 1}\n\t* ${2:List Item 2}\n\t\t* ${3:sub list item 1}\n\t\t* ${4:sub list item 2}\n\nsnippet vorderedList\n\t1. ${1: Item 1}\n\t2. ${2: Item 2}\n\t\t1. ${3: Item 1}\n\t\t2. ${4: Item 2}\n\t\t\n\n# task list\nsnippet vtasklist\n\t- [${1:x}] ${2:item}\n\t\n\n\t\n"
+                },
+                {
+                    "type": "snippets",
+                    "filename": "table.snippets",
+                    "data": "\n## Table snippets\nsnippet vtabdata\n\t   ${1:data}        | \n\nsnippet vtabheaderseperate\n\t--------------- |\n\n\nsnippet vtable1header\n\t  ${1:Column 1}   |\n\t ---------------- |\n\t\n\nsnippet vtable2headers\n\t  ${1:Column 1}  |  ${2:Column 2}  |\n\t  -------------- |---------------- |\n\t\n\nsnippet vtable3headers\n\t  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  |\n\t  -------------- |---------------- |---------------- |\n\t\n\nsnippet vtable4headers\n\t  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  |\n\t  -------------- |---------------- |---------------- |---------------- |\n\t\n\nsnippet vtable5headers\n\t  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  | ${5:Column 5}  |\n\t  -------------- |---------------- |---------------- |---------------- |---------------- |\n\t\n\nsnippet vtable6headers\n\t| ${1:Column 1}   |  ${2:Column 2}  |  ${3:Column 3}  |  ${4:Column 4}  |  ${5:Column 5}  |  ${6:Column 6 } |\n\t|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |\n\t\n\n\nsnippet vtable1row\n\t${1:table-data}   |\n\t\n\nsnippet vtable2rows\n\t${1:table-data}  |  ${2:table-data}  |\n\t\n\nsnippet vtable3rows\n\t${1:table-data}  |  ${2:table-data}  | ${3:table-data}  |\n\t\n\nsnippet vtable4rows\n\t${1:table-data}  |  ${2:table-data}  | ${3:table-data}  | ${4:table-data}  |\n\t\n\nsnippet vtable5rows\n\t${1:table-data}  |  ${2:table-data}  | ${3:table-data}  | ${4:table-data}  | ${5:table-data}  |\n\t\n\nsnippet vtable6rows\n\t${1:table-data}   |  ${2:table-data}  |  ${3:table-data}  |  ${4:table-data}  |  ${5:table-data}  |  ${6:table-data } \n"
                 }
             ].forEach(function(x) {
                 debug.addStaticPlugin(x.type, "vdockPlugin", x.filename, x.data, plugin);
@@ -54,6 +59,6 @@ define("plugins/vdockPlugin/__static__",[], function(require, exports, module) {
         
         plugin.load("vdockPlugin.bundle");
         
-        register(null, {});
+        register(null, {"vdockPlugin.bundle": plugin});
     }
 });
