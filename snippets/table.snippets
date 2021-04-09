@@ -1,14 +1,18 @@
 # scope: markdown
 
 ## Table snippets
-snippet vtabdata
-	   ${1:data}        | 
 
-snippet vtabheaderseperate
+# snippet vtablehelp
+	
+	
+snippet vtablecell
+	   ${1:data}     | 
+
+snippet vtableheaderseperator
 	--------------- |
 
 
-snippet vtable1header
+snippet vtable1cellheader
 	  ${1:Column 1}   |
 	 ---------------- |
 	
@@ -29,7 +33,7 @@ snippet vtable4headers
 	
 
 snippet vtable5headers
-	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  | ${5:Column 5}  |
+	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}   | ${4:Column 4}   | ${5:Column 5}   |
 	  -------------- |---------------- |---------------- |---------------- |---------------- |
 	
 
@@ -39,25 +43,87 @@ snippet vtable6headers
 	
 
 
-snippet vtable1row
+snippet vtable1cell
 	${1:table-data}   |
 	
 
-snippet vtable2rows
+snippet vtable2cells
 	${1:table-data}  |  ${2:table-data}  |
 	
 
-snippet vtable3rows
+snippet vtable3cells
 	${1:table-data}  |  ${2:table-data}  | ${3:table-data}  |
 	
 
-snippet vtable4rows
+snippet vtable4cells
 	${1:table-data}  |  ${2:table-data}  | ${3:table-data}  | ${4:table-data}  |
 	
 
-snippet vtable5rows
+snippet vtable5cells
 	${1:table-data}  |  ${2:table-data}  | ${3:table-data}  | ${4:table-data}  | ${5:table-data}  |
 	
 
-snippet vtable6rows
+snippet vtable6cells
+	${1:table-data}   |  ${2:table-data}  |  ${3:table-data}  |  ${4:table-data}  |  ${5:table-data}  |  ${6:table-data } 
+
+
+snippet vtcell
+	   ${1:data}     | 
+
+snippet vtheaderseperator
+	--------------- |
+
+
+snippet vt1cellheader
+	  ${1:Column 1}   |
+	 ---------------- |
+	
+
+snippet vt2headers
+	  ${1:Column 1}  |  ${2:Column 2}  |
+	  -------------- |---------------- |
+	
+
+snippet vt3headers
+	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  |
+	  -------------- |---------------- |---------------- |
+	
+
+snippet vt4headers
+	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}  | ${4:Column 4}  |
+	  -------------- |---------------- |---------------- |---------------- |
+	
+
+snippet vt5headers
+	  ${1:Column 1}  |  ${2:Column 2}  | ${3:Column 3}   | ${4:Column 4}   | ${5:Column 5}   |
+	  -------------- |---------------- |---------------- |---------------- |---------------- |
+	
+
+snippet vt6headers
+	| ${1:Column 1}   |  ${2:Column 2}  |  ${3:Column 3}  |  ${4:Column 4}  |  ${5:Column 5}  |  ${6:Column 6 } |
+	|---------------- |---------------- |---------------- |---------------- |---------------- |---------------- |
+	
+
+
+snippet vt1cell
+	${1:table-data}   |
+	
+
+snippet vt2cells
+	${1:table-data}  |  ${2:table-data}  |
+	
+
+snippet vt3cells
+	${1:table-data}  |  ${2:table-data}  | ${3:table-data}  |
+	
+
+snippet vt4cells
+	${1:table-data}  |  ${2:table-data}  | ${3:table-data}  | ${4:table-data}  |
+	
+
+snippet vt5cells
+	${1:table-data}  |  ${2:table-data}  | ${3:table-data}  | ${4:table-data}  | ${5:table-data}  |
+	
+
+snippet vt6cells
 	${1:table-data}   |  ${2:table-data}  |  ${3:table-data}  |  ${4:table-data}  |  ${5:table-data}  |  ${6:table-data } 
